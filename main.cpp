@@ -8,10 +8,11 @@
 #include <cstdint>
 #include "Array.h"
 #include "LinkedList.h"
+#include "Stack.h"
 using namespace std;
 int main()
 {
-    ///* code to test array class */
+    /* code to test array class */
     //uint32_t array_size{};
     //cout << "enter the size of the array : " << endl;
     //cin >> array_size;
@@ -20,7 +21,7 @@ int main()
     //my_array.display();
     //cout << "array size : " << my_array.getsize() << "\t array length : " << my_array.getlength() << endl;
 
-    // //this code to test search function 
+    //this code to test search function 
     //cout << "search number in array : " << endl;
     //uint32_t element{}; int32_t index{ -1 };
     //cin >> element;
@@ -51,8 +52,11 @@ int main()
     //my_array.delete_element(newelement);
     //my_array.display();
 
+
+    /***********************************************************************/
+
     /* This code to test linked list */
-    LinkedList l1;
+    /*LinkedList l1;
     l1.insertFirst(10);
     l1.insertFirst(20);
     l1.insertAt(10, 30);
@@ -64,7 +68,26 @@ int main()
     if (l1.isFound(10))
         cout << "Item is found !!" << endl;
     else
-        cout << "Item is not found !!" << endl;
+        cout << "Item is not found !!" << endl;*/
+
+    /************************************************************************/
+
+     /* This code to test Stack */
+    Stack s1;
+    s1.push(10);
+    s1.push(20);
+    s1.push(30);
+    s1.Display();
+    cout << s1.pop() << " is poped !!" << endl;
+    s1.Display();
+    if (s1.isFound(10))
+    {
+        cout << "element is found !!" << endl;
+    }
+    else
+    {
+        cout << "element is not found !!" << endl;
+    }
 }
 
 

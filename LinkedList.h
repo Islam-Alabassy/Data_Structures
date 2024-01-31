@@ -3,7 +3,7 @@
 #include <cstdint>
 class LinkedList
 {
-private:
+protected:
 	struct node {
 		uint32_t data;
 		node* next;
