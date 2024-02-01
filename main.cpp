@@ -9,6 +9,7 @@
 #include "Array.h"
 #include "LinkedList.h"
 #include "Stack.h"
+#include "Queue.h"
 using namespace std;
 int main()
 {
@@ -73,7 +74,7 @@ int main()
     /************************************************************************/
 
      /* This code to test Stack */
-    Stack s1;
+    /*Stack s1;
     s1.push(10);
     s1.push(20);
     s1.push(30);
@@ -87,6 +88,23 @@ int main()
     else
     {
         cout << "element is not found !!" << endl;
+    }*/
+
+    /* This code to test Queue */
+    Queue q1;
+    q1.enqueue(10);
+    q1.enqueue(20);
+    q1.enqueue(30);
+    q1.Display();
+    cout << q1.dequeue() << " is dequeued !!" << endl;
+    q1.Display();
+    if (q1.isFound(20))
+    {
+        cout << "Item is found !!" << endl;
+    }
+    else
+    {
+        cout << "Item is not found !!" << endl;
     }
 }
 

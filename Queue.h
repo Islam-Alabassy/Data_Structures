@@ -3,24 +3,26 @@
 #include <cstdint>
 #include "LinkedList.h"
 using namespace std;
-class Stack 
+class Queue 
 {
 private:
 	struct node {
 		uint32_t data;
 		node* next;
 	};
-	node* top;
-	uint32_t stkcounter;
+	node* front;
+	node* tail;
+	uint32_t qcounter;
 public:
-	Stack();
+	Queue();
 	bool isEmpty(void);
-	bool isFound(uint32_t item);
-	bool isFull(void);
-	void push(uint32_t item);
-	uint32_t pop(void);
-	uint32_t peek(void);
-	uint32_t count(void);
+	void enqueue(uint32_t item);
 	void Display(void);
+	uint32_t dequeue(void);
+	uint32_t peek(void);
+	uint32_t getTail(void);
+	uint32_t count(void);
+	bool isFound(uint32_t item);
+	void clear(void);
 };
 

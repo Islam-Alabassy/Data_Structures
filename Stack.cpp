@@ -22,7 +22,7 @@ bool Stack::isFound(uint32_t item)
         if (temp->data == item)
         {
             return true;
-        }
+        } 
         temp = temp->next;
     }
     return false;
